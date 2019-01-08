@@ -18,7 +18,9 @@ export class MutantesService {
 
     this.http.get('assets/data/mutantes.json').subscribe( respuesta =>{
 
-      console.log( respuesta );
+      let data = respuesta.json();
+      console.log(data);
+      this.mutantes = data.mutantes;
       
     });
    }
