@@ -7,7 +7,7 @@ export class MutantesService {
 
   mutantes:any[] = [];
 
-  constructor( private http:Http ) {
+  constructor( private http:Http ){
 
       console.log('Servicio de mutantes listo para usar');
       this.cargar_mutantes();
@@ -20,7 +20,6 @@ export class MutantesService {
 
       console.log( respuesta );
       
-
     });
    }
 }
