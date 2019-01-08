@@ -1,0 +1,12 @@
+<h1 *ngIf="existo" class="h1">Existo!!!</h1>
+<h1 *ngIf="!existo" class="h1">No Existo!!!</h1>
+
+<button type="button" class="btn btn-primary" (click)="existo = !existo" >Cambiar</button>
+
+<hr>
+
+<ul class="list-group">
+  <li *ngFor="let mutante of mutantes; let i = index" class="list-group-item">
+     {{ i + 1 }} {{ mutante }}
+  </li>
+</ul>

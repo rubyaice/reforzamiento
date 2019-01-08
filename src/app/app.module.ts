@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { VariablesComponent } from './components/variables/variables.component';
 import { AtributosComponent } from './components/atributos/atributos.component';
+import { EstructuralesComponent } from './components/estructurales/estructurales.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     VariablesComponent,
-    AtributosComponent
+    AtributosComponent,
+    EstructuralesComponent
   ],
   imports: [
     BrowserModule,
