@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http }  from '@angular/http';
 
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class MutantesService {
 
   mutantes:any[] = [];
@@ -21,6 +19,7 @@ export class MutantesService {
     this.http.get('assets/data/mutantes.json').subscribe( respuesta =>{
 
       console.log( respuesta );
+      
 
     });
    }
