@@ -8,6 +8,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { VariablesComponent } from './components/variables/variables.component';
 import { AtributosComponent } from './components/atributos/atributos.component';
 import { EstructuralesComponent } from './components/estructurales/estructurales.component';
+import { HttpComponent } from './components/http/http.component';
+
+//servicios
+import { MutantesService } from './services/mutantes.service';
 
 
 @NgModule({
@@ -17,6 +21,7 @@ import { EstructuralesComponent } from './components/estructurales/estructurales
     VariablesComponent,
     AtributosComponent,
     EstructuralesComponent,
+    HttpComponent,
     
   ],
   imports: [
@@ -24,7 +29,10 @@ import { EstructuralesComponent } from './components/estructurales/estructurales
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+
+    MutantesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
